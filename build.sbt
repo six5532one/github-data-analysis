@@ -6,8 +6,6 @@ enablePlugins(
   NewRelic
 )
 
-com.meetup.sbtopenapi.Plugin.openapiSettings
-
 name := "indexer"
 
 organization := "com.meetup.pro"
