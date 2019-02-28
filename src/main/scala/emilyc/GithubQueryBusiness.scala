@@ -1,6 +1,6 @@
 package emilyc
 
-import emilyc.models.{CodeOfConduct, OrganizationRepositoryEdge}
+import emilyc.models.{ CodeOfConduct, OrganizationRepositoryEdge }
 import scala.util.Try
 
 trait GithubQueryBusiness {

@@ -1,7 +1,8 @@
 package emilyc.models
 
 sealed case class RepositoryIssues(
-  totalCount: Int)
+  totalCount: Int
+)
 
 object RepositoryIssues {
 

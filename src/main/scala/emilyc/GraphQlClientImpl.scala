@@ -1,13 +1,13 @@
 package emilyc
 
-import emilyc.codec.{Codec, Serializer}
+import emilyc.codec.{ Codec, Serializer }
 
 import org.json4s.JValue
 import org.json4s.JsonDSL._
-import org.json4s.native.JsonMethods.{compact, render}
+import org.json4s.native.JsonMethods.{ compact, render }
 import dispatch._
 
-import scala.util.{Try, Success, Failure}
+import scala.util.{ Try, Success, Failure }
 import scala.concurrent.duration._
 import scala.concurrent.Await
 import scala.concurrent.ExecutionContext.Implicits.global
@@ -16,13 +16,15 @@ object GraphQlClientImpl {
   def apply(graphqlEndpoint: String): GraphQlClientImpl = new GraphQlClientImpl(
     graphqlEndpoint,
     Http.default,
-    1.minutes)
+    1.minutes
+  )
 }
 
 class GraphQlClientImpl(
     endpoint: String,
     httpExecutor: HttpExecutor,
-    timeoutInterval: FiniteDuration) extends GraphQlClient {
+    timeoutInterval: FiniteDuration
+) extends GraphQlClient {
 
   def execute[T: Codec](query: String): Try[T] = {
     val token = sys.env("GITHUB_TOKEN")

@@ -2,7 +2,7 @@ package emilyc.codec
 
 import org.json4s._
 import org.json4s.native.JsonMethods
-import org.json4s.native.JsonMethods.{compact, render}
+import org.json4s.native.JsonMethods.{ compact, render }
 
 object Parser {
   def parse(s: String): Either[String, JValue] =

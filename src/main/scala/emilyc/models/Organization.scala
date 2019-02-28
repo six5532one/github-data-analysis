@@ -1,7 +1,8 @@
 package emilyc.models
 
 sealed case class Organization(
-  repositories: OrganizationRepositoriesConnection)
+  repositories: OrganizationRepositoriesConnection
+)
 
 object Organization {
 

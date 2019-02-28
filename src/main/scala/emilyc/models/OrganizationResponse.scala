@@ -1,7 +1,8 @@
 package emilyc.models
 
 sealed case class OrganizationResponse(
-  data: OrganizationData)
+  data: OrganizationData
+)
 
 object OrganizationResponse {
 

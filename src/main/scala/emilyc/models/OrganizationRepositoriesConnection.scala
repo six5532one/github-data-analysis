@@ -1,7 +1,8 @@
 package emilyc.models
 
 sealed case class OrganizationRepositoriesConnection(
-  edges: List[OrganizationRepositoryEdge])
+  edges: List[OrganizationRepositoryEdge]
+)
 
 object OrganizationRepositoriesConnection {
 

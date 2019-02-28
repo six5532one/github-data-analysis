@@ -4,7 +4,8 @@ sealed case class Repository(
   name: String,
   isPrivate: Boolean,
   forkCount: Int,
-  issues: RepositoryIssues)
+  issues: RepositoryIssues
+)
 
 object Repository {
 

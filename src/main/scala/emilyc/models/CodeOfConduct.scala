@@ -4,7 +4,8 @@ package emilyc.models
  * abc
  */
 sealed case class CodeOfConduct(
-  body: String)
+  body: String
+)
 
 object CodeOfConduct {
 

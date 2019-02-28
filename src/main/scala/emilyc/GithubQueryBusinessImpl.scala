@@ -1,10 +1,10 @@
 package emilyc
 
 import GithubQueryBusinessImpl.PaginationParams
-import emilyc.models.{CodesOfConductResponse, CodeOfConduct, OrganizationResponse, OrganizationRepositoryEdge, Edge, Repository}
+import emilyc.models.{ CodesOfConductResponse, CodeOfConduct, OrganizationResponse, OrganizationRepositoryEdge, Edge, Repository }
 import emilyc.codec.Serializer
 
-import scala.util.{Try, Success, Failure}
+import scala.util.{ Try, Success, Failure }
 
 object GithubQueryBusinessImpl {
   val GithubAPIEndpoint = "https://api.github.com/graphql"
@@ -48,7 +48,8 @@ class GithubQueryBusinessImpl(graphQlClient: GraphQlClient = GraphQlClientImpl(G
 
   private def getResults[N, T <: Edge[N]](
     paginationParams: PaginationParams,
-    getPage: PaginationParams => Try[List[T]]): Try[List[T]] = getPage(paginationParams) match {
+    getPage: PaginationParams => Try[List[T]]
+  ): Try[List[T]] = getPage(paginationParams) match {
     case failure: Failure[List[T]] => failure
     case Success(Nil) =>
       println("this page is empty")
@@ -63,5 +64,6 @@ class GithubQueryBusinessImpl(graphQlClient: GraphQlClient = GraphQlClientImpl(G
   def getRepositories: Try[List[OrganizationRepositoryEdge]] =
     getResults[Repository, OrganizationRepositoryEdge](
       PaginationParams(25, None),
-      getRepositoriesPage)
+      getRepositoriesPage
+    )
 }

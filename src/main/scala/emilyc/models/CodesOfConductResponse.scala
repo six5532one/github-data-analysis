@@ -4,7 +4,8 @@ package emilyc.models
  * aaa
  */
 sealed case class CodesOfConductResponse(
-  data: CodesOfConductData)
+  data: CodesOfConductData
+)
 
 object CodesOfConductResponse {
 

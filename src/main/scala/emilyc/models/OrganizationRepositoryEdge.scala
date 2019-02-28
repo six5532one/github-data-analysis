@@ -2,7 +2,8 @@ package emilyc.models
 
 sealed case class OrganizationRepositoryEdge(
   cursor: String,
-  node: Repository) extends Edge[Repository]
+  node: Repository
+) extends Edge[Repository]
 
 object OrganizationRepositoryEdge {
 

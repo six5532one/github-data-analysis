@@ -4,7 +4,8 @@ package emilyc.models
  * bcd
  */
 sealed case class CodesOfConductData(
-  codesOfConduct: List[CodeOfConduct])
+  codesOfConduct: List[CodeOfConduct]
+)
 
 object CodesOfConductData {
 
