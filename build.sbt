@@ -12,11 +12,7 @@ organization := "com.meetup.pro"
 
 scalaVersion := "2.11.8"
 
-newrelicVersion := "3.42.0"
-newrelicCustomTracing := true
-newrelicIncludeApi := true
 coverallsPublishPrReport := true
-newrelicAppName := "AWS::pro-indexer"
 
 
 val elastic4sVersion = "6.2.3"
