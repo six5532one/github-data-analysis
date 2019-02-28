@@ -1,4 +1,4 @@
-package emilyc
+package emilyc.codec
 
 import org.json4s._
 import org.json4s.native.JsonMethods

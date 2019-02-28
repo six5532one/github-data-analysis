@@ -1,4 +1,4 @@
-package emilyc
+package emilyc.codec
 
 import Codec._
 import Parser._

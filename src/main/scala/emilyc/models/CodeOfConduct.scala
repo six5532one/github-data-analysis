@@ -8,7 +8,7 @@ sealed case class CodeOfConduct(
 
 object CodeOfConduct {
 
-  import com.meetup.pro.indexer.Codec
+  import emilyc.codec.Codec
 
   import org.json4s._
 

@@ -1,6 +1,7 @@
 package emilyc
 
-import com.meetup.pro.indexer.Codec
+import emilyc.codec.Codec
+
 import org.json4s.JValue
 import scala.util.Try
 

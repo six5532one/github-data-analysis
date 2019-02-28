@@ -1,4 +1,4 @@
-package emilyc
+package emilyc.codec
 
 import org.json4s.JValue
 import org.json4s.Formats
@@ -22,7 +22,7 @@ trait Codec[A] {
 
 object Codec extends CodecInstances {
 
-  import com.meetup.pro.indexer.model._
+  import emilyc.models._
   import com.meetup.json4s.JavaTimeSerializers
   import org.json4s.native.Serialization
 

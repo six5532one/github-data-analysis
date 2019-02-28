@@ -1,6 +1,6 @@
 package emilyc
 
-import com.meetup.pro.indexer.{Codec, Serializer}
+import emilyc.codec.{Codec, Serializer}
 
 import org.json4s.JValue
 import org.json4s.JsonDSL._

@@ -5,7 +5,7 @@ sealed case class OrganizationResponse(
 
 object OrganizationResponse {
 
-  import com.meetup.pro.indexer.Codec
+  import emilyc.codec.Codec
 
   import org.json4s._
 

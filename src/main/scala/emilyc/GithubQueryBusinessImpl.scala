@@ -2,7 +2,7 @@ package emilyc
 
 import GithubQueryBusinessImpl.PaginationParams
 import emilyc.models.{CodesOfConductResponse, CodeOfConduct, OrganizationResponse, OrganizationRepositoryEdge, Edge, Repository}
-import com.meetup.pro.indexer.Serializer
+import emilyc.codec.Serializer
 
 import scala.util.{Try, Success, Failure}
 
@@ -62,6 +62,6 @@ class GithubQueryBusinessImpl(graphQlClient: GraphQlClient = GraphQlClientImpl(G
 
   def getRepositories: Try[List[OrganizationRepositoryEdge]] =
     getResults[Repository, OrganizationRepositoryEdge](
-      PaginationParams(50, None),
+      PaginationParams(25, None),
       getRepositoriesPage)
 }
