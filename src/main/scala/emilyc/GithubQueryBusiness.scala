@@ -1,9 +1,9 @@
 package emilyc
 
-import emilyc.models.{ CodeOfConduct, OrganizationRepositoryEdge }
+import emilyc.models.Repository
 import scala.util.Try
 
 trait GithubQueryBusiness {
-  def getCodesOfConduct: Try[List[CodeOfConduct]]
-  def getRepositories: Try[List[OrganizationRepositoryEdge]]
+  def repositoriesWithMostForks(organizationName: String, n: Int): Try[List[Repository]]
+  def repositoriesWithMostIssues(organizationName: String, n: Int): Try[List[Repository]]
 }
