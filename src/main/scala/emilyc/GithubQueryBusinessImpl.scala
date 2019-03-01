@@ -51,7 +51,7 @@ class GithubQueryBusinessImpl(graphQlClient: GraphQlClient = GraphQlClientImpl(G
   private def getRepositories(organizationName: String): Try[List[OrganizationRepositoryEdge]] = {
     val pageSize = 25
     getResults[Repository, OrganizationRepositoryEdge](
-      PaginationParams(25, None),
+      PaginationParams(pageSize, None),
       getRepositoriesPage(organizationName)
     )
   }
