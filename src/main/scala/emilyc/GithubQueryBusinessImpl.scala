@@ -2,7 +2,6 @@ package emilyc
 
 import GithubQueryBusinessImpl.PaginationParams
 import emilyc.models.{ OrganizationResponse, OrganizationRepositoryEdge, Edge, Repository }
-import emilyc.codec.Serializer
 
 import scala.util.{ Try, Success, Failure }
 
