@@ -5,7 +5,7 @@ Given an organization with repositories hosted on Github, it returns the organiz
 
 Attribution
 ------------
-The following were sourced from https://github.com/meetup/meetup-scala-generator/tree/master/src/main/resources/meetup-scala:
+The following were sourced from [Meetup's OpenAPI server/client stub generator](https://github.com/meetup/meetup-scala-generator/tree/master/src/main/resources/meetup-scala):
 * [emilyc.codec.Codec](https://github.com/six5532one/github-data-analysis/blob/master/src/main/scala/emilyc/codec/Codec.scala)
 * [emilyc.codec.CodecInstances](https://github.com/six5532one/github-data-analysis/blob/master/src/main/scala/emilyc/codec/CodecInstances.scala)
 * [emilyc.codec.Parser](https://github.com/six5532one/github-data-analysis/blob/master/src/main/scala/emilyc/codec/Parser.scala)
